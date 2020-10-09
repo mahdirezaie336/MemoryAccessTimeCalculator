@@ -1,0 +1,54 @@
+Memories [A;C;] 	Access Time: 7.4	| Total size: 80	| Total cost: 145
+Memories [B;C;] 	Access Time: 11.0	| Total size: 90	| Total cost: 115
+Memories [C;A;] 	Access Time: 20.12	| Total size: 80	| Total cost: 145
+Memories [C;B;] 	Access Time: 20.75	| Total size: 90	| Total cost: 115
+Memories [B;C;D;] 	Access Time: 51.5	| Total size: 590	| Total cost: 148
+Memories [C;B;D;] 	Access Time: 54.5	| Total size: 590	| Total cost: 148
+Memories [A;D;] 	Access Time: 57.0	| Total size: 510	| Total cost: 133
+Memories [B;D;] 	Access Time: 57.5	| Total size: 520	| Total cost: 103
+Memories [C;D;] 	Access Time: 62.0	| Total size: 570	| Total cost: 78
+Memories [C;D;B;] 	Access Time: 80.22	| Total size: 590	| Total cost: 148
+Memories [B;D;C;] 	Access Time: 81.8	| Total size: 590	| Total cost: 148
+Memories [D;A;] 	Access Time: 100.06	| Total size: 510	| Total cost: 133
+Memories [D;B;] 	Access Time: 100.37	| Total size: 520	| Total cost: 103
+Memories [D;C;] 	Access Time: 102.4	| Total size: 570	| Total cost: 78
+Memories [D;B;C;] 	Access Time: 103.3	| Total size: 590	| Total cost: 148
+Memories [D;C;B;] 	Access Time: 106.22	| Total size: 590	| Total cost: 148
+Memories [C;D;E;] 	Access Time: 171080.0	| Total size: 4666	| Total cost: 83
+Memories [D;C;E;] 	Access Time: 171106.0	| Total size: 4666	| Total cost: 83
+Memories [B;D;E;] 	Access Time: 213830.0	| Total size: 4616	| Total cost: 108
+Memories [D;B;E;] 	Access Time: 213851.5	| Total size: 4616	| Total cost: 108
+Memories [A;D;E;] 	Access Time: 228081.0	| Total size: 4606	| Total cost: 138
+Memories [D;A;E;] 	Access Time: 228100.3	| Total size: 4606	| Total cost: 138
+Memories [D;E;] 	Access Time: 285100.0	| Total size: 4596	| Total cost: 38
+Memories [D;E;A;] 	Access Time: 300100.0	| Total size: 4606	| Total cost: 138
+Memories [D;E;B;] 	Access Time: 300100.01	| Total size: 4616	| Total cost: 108
+Memories [D;E;C;] 	Access Time: 300100.12	| Total size: 4666	| Total cost: 83
+Memories [B;C;E;] 	Access Time: 427520.0	| Total size: 4186	| Total cost: 120
+Memories [C;B;E;] 	Access Time: 427523.0	| Total size: 4186	| Total cost: 120
+Memories [A;C;E;] 	Access Time: 456017.0	| Total size: 4176	| Total cost: 150
+Memories [C;A;E;] 	Access Time: 456020.6	| Total size: 4176	| Total cost: 150
+Memories [C;E;] 	Access Time: 570020.0	| Total size: 4166	| Total cost: 50
+Memories [C;E;A;] 	Access Time: 600020.0	| Total size: 4176	| Total cost: 150
+Memories [C;E;B;] 	Access Time: 600020.03	| Total size: 4186	| Total cost: 120
+Memories [C;E;D;] 	Access Time: 600022.1	| Total size: 4666	| Total cost: 83
+Memories [B;E;] 	Access Time: 712505.0	| Total size: 4116	| Total cost: 75
+Memories [B;E;C;] 	Access Time: 750005.3	| Total size: 4186	| Total cost: 120
+Memories [B;E;D;] 	Access Time: 750007.62	| Total size: 4616	| Total cost: 108
+Memories [A;E;] 	Access Time: 760001.0	| Total size: 4106	| Total cost: 105
+Memories [A;E;C;] 	Access Time: 800001.32	| Total size: 4176	| Total cost: 150
+Memories [A;E;D;] 	Access Time: 800003.8	| Total size: 4606	| Total cost: 138
+Memories [E;A;] 	Access Time: 1000000.01| Total size: 4106	| Total cost: 105
+Memories [E;B;] 	Access Time: 1000000.06| Total size: 4116	| Total cost: 75
+Memories [E;A;C;] 	Access Time: 1000000.37| Total size: 4176	| Total cost: 150
+Memories [E;C;] 	Access Time: 1000000.4	| Total size: 4166	| Total cost: 50
+Memories [E;B;C;] 	Access Time: 1000000.55| Total size: 4186	| Total cost: 120
+Memories [E;C;A;] 	Access Time: 1000001.0	| Total size: 4176	| Total cost: 150
+Memories [E;C;B;] 	Access Time: 1000001.03| Total size: 4186	| Total cost: 120
+Memories [E;A;D;] 	Access Time: 1000002.85| Total size: 4606	| Total cost: 138
+Memories [E;B;D;] 	Access Time: 1000002.87| Total size: 4616	| Total cost: 108
+Memories [E;C;D;] 	Access Time: 1000003.1	| Total size: 4666	| Total cost: 83
+Memories [E;D;] 	Access Time: 1000003.5	| Total size: 4596	| Total cost: 38
+Memories [E;D;A;] 	Access Time: 1000005.0	| Total size: 4606	| Total cost: 138
+Memories [E;D;B;] 	Access Time: 1000005.01| Total size: 4616	| Total cost: 108
+Memories [E;D;C;] 	Access Time: 1000005.12| Total size: 4666	| Total cost: 83
