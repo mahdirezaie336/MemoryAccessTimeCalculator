@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 
 public class Computer
 {
@@ -16,11 +18,12 @@ public class Computer
 		
 		Memory mem = memories.get(index);
 		if(index == memories.size() - 1)
-			return mem.getAccessTime();
+			return mem.getAccessTime() * mem.getHitrate();
 		
 		double hitrate = mem.getHitrate();
 		long accessTime = mem.getAccessTime();
-		return accessTime + (1.0 - hitrate)*calculateAverageAccessTime(index+1);
+		double rValue = accessTime + (1.0 - hitrate)*calculateAverageAccessTime(index+1);
+		return Math.floor(rValue * 100) / 100;
 	}
 	
 	public long calculateTotalSize()
@@ -44,6 +47,12 @@ public class Computer
 		memories.add(mem);
 		return this;
 	}
+	
+	public void removeMemories()
+	{
+		for(int i = memories.size() - 1; i > -1; i--)
+			memories.remove(i);
+	}
 
 	public static void main(String[] args)
 	{
@@ -60,15 +69,72 @@ public class Computer
 		Memory m3 = new Memory("M3", 500, 0.9, 0, 0);
 		Memory main = new Memory("Main", 10000000, 1, 0, 0);
 		
-		c.addMemory(m1)
+		ArrayList<ListItem> result = new ArrayList<>();
+		
+		/*c.addMemory(m1)
 		 .addMemory(mn)
 		 .addMemory(m2)
 		 .addMemory(m3)
 		 .addMemory(main);
+		*/
+		Memory[] mems = {A,B,C,D,E};
 		
-		System.out.println(c.calculateAverageAccessTime(0)
-							+ " | Total size: " + c.calculateTotalSize()
-							+ " | Total cost: " + c.calculateTotalCost());
+		for(Memory mem1 : mems)
+			for(Memory mem2 : mems)
+				for(Memory mem3 : mems)
+				{
+					c.removeMemories();
+					c.addMemory(mem1);
+					c.addMemory(mem2);
+					c.addMemory(mem3);
+					
+					if(mem1 == mem2 || mem1 == mem3 || mem2 == mem3)
+						continue;
+					
+					int cost = c.calculateTotalCost();
+					if(cost <= 150)
+						result.add(new ListItem(c.toString(), c.calculateAverageAccessTime(0),
+								c.calculateTotalSize(), c.calculateTotalCost()));
+				}
+		
+		for(Memory mem1 : mems)
+			for(Memory mem2 : mems)
+			{
+				c.removeMemories();
+				c.addMemory(mem1);
+				c.addMemory(mem2);
+				
+				if(mem1 == mem2)
+					continue;
+				
+				int cost = c.calculateTotalCost();
+				if(cost <= 150)
+					result.add(new ListItem(c.toString(), c.calculateAverageAccessTime(0),
+							c.calculateTotalSize(), c.calculateTotalCost()));
+			}
+		
+		Collections.sort(result);
+		
+		for(ListItem item : result)
+			System.out.println(item);
+		
+	}
+	
+	public void printSystemInfo()
+	{
+
+		System.out.println(toString() +"\tAccess Time: " + calculateAverageAccessTime(0)
+							+ "\t| Total size: " + calculateTotalSize()
+							+ "\t| Total cost: " + calculateTotalCost());
 	}
 
+	@Override
+	public String toString()
+	{
+		String name = "";
+		for(Memory mem : memories)
+			name += mem.getName() + ";";
+		return "Memories ["+name+"] ";
+	}
+	
 }

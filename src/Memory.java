@@ -67,7 +67,5 @@ public class Memory
 	{
 		this.size = size;
 	}
-	
-	
 
 }
